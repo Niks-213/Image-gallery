@@ -1,0 +1,54 @@
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+  }
+  
+  .slider-track {
+    display: flex;
+    transition: transform 0.5s ease; 
+  }
+  
+  .slider-image {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3; 
+    transition: opacity 0.5s ease; 
+  }
+  
+  .slider-image.active {
+    opacity: 1; 
+  }
+  
+  .arrow-btn {
+    position: absolute;
+    top: 50%;
+    font-size: 32px; 
+    color: rgba(255, 255, 255, 0.7); 
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none; 
+    transition: color 0.3s ease, opacity 0.3s ease; 
+  }
+  
+  .arrow-btn:hover {
+    color: rgba(255, 255, 255, 1);
+    opacity: 1; 
+  }
+  
+  .next {
+    right: 10px; 
+  }
+  
+  .prev {
+    left: 10px; 
+    z-index: 1; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+  }
+  
+  .prev:hover {
+    opacity: 1;
+  }
+  
